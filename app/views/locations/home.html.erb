@@ -1,0 +1,14 @@
+
+  <div class="heading">
+    <h1><%= @location.title  %> </h1>
+    <h2><%= @location.subtitle %></h2>
+  </div>
+
+  <div class="poster">
+    <%= image_tag image_url(@location.header_image) %>
+  </div>
+
+  <div class="container">
+    <p> <%= @location.description %> </p>
+  </div>
+<%= link_to "Back to ALL Locations", locations_path %>

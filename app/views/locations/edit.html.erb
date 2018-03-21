@@ -1,0 +1,10 @@
+<div class="heading">
+<h1 style="color: #af1c14";> Edit:
+  <span><%= @location.title %></span></h1>
+
+<%= render "form", location: @location %>
+</div>
+<%= link_to "Back to ALL Locations", locations_path %>
+<br>
+<br>
+<%= link_to "Back to SINGLE Location", location_path %>

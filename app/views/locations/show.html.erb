@@ -1,0 +1,22 @@
+
+<%= [@location].sample %>>
+
+<div class="heading">
+  <h1><%= @location.title  %> </h1>
+  <h2><%= @location.subtitle %></h2>
+</div>
+<div class="poster">
+  <%= image_tag image_url(@location.header_image) %>
+</div>
+
+<div class="container">
+  <p> <%= @location.description %> </p>
+</div>
+
+<br>
+<%= link_to "Edit this Location", edit_location_path(@location) %>
+<br>
+<%= link_to "Delete this Location", location_path(@location), method: :delete, data: { confirm: "are you sure?" }%>
+<br>
+<br>
+<%= link_to "Back to all Locations", locations_path %>
